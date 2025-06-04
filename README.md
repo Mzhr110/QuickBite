@@ -25,4 +25,4 @@ QuickBite is a modern food delivery app made using Flutter and Firebase. Users c
 ![QuickBite](mockups)
 
 ## 📹 Video Demo
-[Watch Demo](demo video/Android Emulator - Pixel_3_API_27_5554 2025-06-04 15-25-23.mp4)
+[Watch Demo](https://drive.google.com/file/d/1Fq09Bn0hCIi4j2wWsG_PCHoAZVg8zwFH/view?usp=sharing)
