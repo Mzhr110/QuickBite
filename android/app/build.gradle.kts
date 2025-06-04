@@ -1,19 +1,17 @@
 plugins {
     id("com.android.application")
-    id("kotlin-android")
-
     // START: FlutterFire Configuration
     id("com.google.gms.google-services")
     // END: FlutterFire Configuration
-
-    // This must be applied LAST
+    id("kotlin-android")
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
 }
 
 android {
     namespace = "com.example.quickbite"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "27.0.12077973"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -21,11 +19,11 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = JavaVersion.VERSION_11.toString()
     }
 
     defaultConfig {
-        applicationId = "com.example.quickbite"
+        applicationId = "com.example.quickbite" // ✅ Must match Firebase's google-services.json
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
@@ -34,7 +32,6 @@ android {
 
     buildTypes {
         release {
-            // Signing with debug keys for testing only
             signingConfig = signingConfigs.getByName("debug")
         }
     }

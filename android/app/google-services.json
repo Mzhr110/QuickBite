@@ -12,7 +12,12 @@
           "package_name": "com.example.quickbite"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "677410887395-0jbphvh73sflsl0psge7mme05btsjcf3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAWZOXbFUC71opZyuj3KPCwJeCuNvYrUI0"
@@ -20,7 +25,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "677410887395-0jbphvh73sflsl0psge7mme05btsjcf3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "677410887395-3kp029dm3kj6bq738r3mv9hiajqse2iu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.quickbite"
+              }
+            }
+          ]
         }
       }
     }
